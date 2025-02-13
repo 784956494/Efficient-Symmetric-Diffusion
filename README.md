@@ -63,7 +63,7 @@ For the torus and special orthogonal group, a wrapped Gaussian distribution is g
 *  Given a $d$-dimensional Riemmanian manifold $\mathcal{M}$, a number of mixture components $k \in \mathbb{N}$, points $m_1,\cdots, m_k \in \mathcal{M}$ and covariance matrices $C_1,\cdots, C_k \in \mathbb{R}^{d \times d}$, we say that a random variable is distributed according to a wrapped Gaussian distribution with means  $m_1,\cdots, m_k$ and covariances $C_1,\cdots, C_k$ (with equal weights on each component) if its distribution is equal to that of a random variable $X$ sampled as follows:
     > Sample an index $i$ at random from $\{1,\cdots, k\}$.
     > Sample $Z \sim N(0, C_i)$
-    > Set $X = \mathrm{exp}_{m_i}(Z)$, where $\mathrm{exp}_{x}(\cdot)$ denotes the exponential map at any point $x \in \mathcal{M}$.
+    > Set $X = \exp_{m_i}(Z)$, where $\exp_{x}(\cdot)$ denotes the exponential map at any point $x \in \mathcal{M}$.
 
 For the unitary, the generated dataset models the Hamiltonian of a quantum oscillator
 * $\mathrm{U}(n)$ matrix are of the form $e^{itH}$, where $t = 1$ is time, $H = \Delta_h - V_h$ is the discretized Hamiltonian for quantum oscillator. $V_h$ comes from the random potential function $V(x) = \frac{1}{2} \omega^2 \| x - x_0 \|^2$. $\omega \sim \mathcal{U}(\text{angular min}, \text{angular max})$, $x_0 \sim \mathcal{N}(\textbf{mean}, \textbf{var}^2)$
