@@ -1,0 +1,1 @@
+python main.py --problem-name SOn --SON 30 --dir SOtime  --snapshot-freq 10000 --gpu -1 --num-itr 2  --interval 1000 --samp-bs 1 --random-x-t --Integrator Exp --resample-itr 2  --T 5 --t0 1e-2 --model-hidden-dim 512 --model-blocks 4 --ckpt-freq 10000 --cpu
